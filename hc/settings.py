@@ -378,6 +378,7 @@ SPIKE_ENABLED = envbool("SPIKE_ENABLED", "True")
 # Telegram integration -- override in local_settings.py
 TELEGRAM_BOT_NAME = os.getenv("TELEGRAM_BOT_NAME", "ExampleBot")
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
+TELEGRAM_API_URL = os.getenv("TELEGRAM_API_URL", "https://api.telegram.org")
 
 # SMS and WhatsApp (Twilio) integration
 TWILIO_ACCOUNT = os.getenv("TWILIO_ACCOUNT")

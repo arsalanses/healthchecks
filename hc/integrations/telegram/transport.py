@@ -16,7 +16,7 @@ class MigrationRequiredError(TransportError):
 
 
 class Telegram(HttpTransport):
-    SM = f"https://api.telegram.org/bot{settings.TELEGRAM_TOKEN}/sendMessage"
+    SM = f"{settings.TELEGRAM_API_URL}/bot{settings.TELEGRAM_TOKEN}/sendMessage"
 
     class MigrationParameters(BaseModel):
         migrate_to_chat_id: int
